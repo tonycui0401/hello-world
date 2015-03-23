@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>helloworld.app</id>
+	<property name="com-appcelerator-apm-id" type="string">55105494b59ef2d53533638c</property>
+    <property name="acs-api-key-production" type="string">DnaodabEwrFYgtK9dCDgHzeLWzGOPuSy</property>
+    <property name="acs-authbase-url" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-api-key-development" type="string">myg8bLoIVza53uRXU9zBZ9NctcON2bqU</property>
+   <id>com.astrazeneca.it.cto.people</id>
     <name>Hello-World</name>
     <version>1.0</version>
     <publisher>cheng</publisher>
@@ -47,7 +52,9 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>
